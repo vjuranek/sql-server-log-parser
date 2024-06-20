@@ -1,0 +1,9 @@
+= MS SQL server log parser
+
+== Setup
+
+```
+curl https://packages.microsoft.com/config/rhel/9/prod.repo | sudo tee /etc/yum.repos.d/mssql-release.repo
+ACCEPT_EULA=Y yum install -y msodbcsql18
+pip install -r requirements
+```
